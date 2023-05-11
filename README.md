@@ -66,9 +66,9 @@ Some rules require type information. Therefore you need to add the
   ],
   "parserOptions": {
     "project": true,
-    "tsconfigRootDir": "__dirname",
+    "tsconfigRootDir": "__dirname"
   },
-  "root": true,
+  "root": true
 }
 ```
 
