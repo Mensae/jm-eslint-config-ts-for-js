@@ -14,6 +14,8 @@ rules that are conflicting with [prettier](https://prettier.io).
 
 - `ts-for-js`, The, default, base configuration that does not include any rules with regard to styling
 - `formatting`, Extention to the `ts-for-js` config that does include styling rules but only those that are not covered by [prettier](https://prettier.io).
+- `ts-for-js-relaxed`, Base configuration with some relaxed rules. Better suitable for personal or small projects.
+- `formatting-relaxed`, Extention to the `ts-for-js-relaxed` configuration.
 
 ## Installation
 
@@ -53,6 +55,19 @@ Recommended:
 }
 ```
 
+Recommended, relaxed:
+
+```json
+{
+  "extends": [
+    "@jm/base-relaxed",
+    "@jm/eslint-config-base/formatting-relaxed",
+    "@jm/ts-for-js-relaxed",
+    "@jm/eslint-config-ts-for-js/formatting-relaxed"
+  ]
+}
+```
+
 Some rules require type information. Therefore you need to add the
 `parserOptions` property to your ESLint configuration:
 
@@ -66,9 +81,9 @@ Some rules require type information. Therefore you need to add the
   ],
   "parserOptions": {
     "project": true,
-    "tsconfigRootDir": "__dirname",
+    "tsconfigRootDir": "__dirname"
   },
-  "root": true,
+  "root": true
 }
 ```
 

@@ -8,6 +8,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
 const OFF = 'off';
+const WARN = 'warn';
 const ERROR = 'error';
 
 module.exports = Object.freeze({
@@ -174,7 +175,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/no-base-to-string
      * Strict
      */
-    '@typescript-eslint/no-base-to-string': ERROR,
+    '@typescript-eslint/no-base-to-string': WARN,
 
     /*
      * Disallow non-null assertion in locations that may be confusing.
@@ -187,7 +188,7 @@ module.exports = Object.freeze({
      * Require expressions of type void to appear in statement position.
      * https://typescript-eslint.io/rules/no-confusing-void-expression
      */
-    '@typescript-eslint/no-confusing-void-expression': ERROR,
+    '@typescript-eslint/no-confusing-void-expression': OFF,
 
     /*
      * Disallow duplicate enum member values.
@@ -207,7 +208,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/no-dynamic-delete
      * Strict
      */
-    '@typescript-eslint/no-dynamic-delete': ERROR,
+    '@typescript-eslint/no-dynamic-delete': WARN,
 
     /*
      * Disallow the declaration of empty interfaces.
@@ -235,7 +236,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/no-extraneous-class
      * Strict
      */
-    '@typescript-eslint/no-extraneous-class': ERROR,
+    '@typescript-eslint/no-extraneous-class': WARN,
 
     /*
      * Require Promise-like statements to be handled appropriately.
@@ -376,12 +377,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
      * Strict
      */
-    '@typescript-eslint/no-unnecessary-boolean-literal-compare': [
-      ERROR,
-      {
-        allowComparingNullableBooleansToTrue: false
-      }
-    ],
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': WARN,
 
     /*
      * Disallow conditionals where the type is always truthy or always falsy.
@@ -476,7 +472,7 @@ module.exports = Object.freeze({
      * Disallow empty exports that don't change anything in a module file.
      * https://typescript-eslint.io/rules/no-useless-empty-export
      */
-    '@typescript-eslint/no-useless-empty-export': ERROR,
+    '@typescript-eslint/no-useless-empty-export': OFF,
 
     /*
      * Disallow `require` statements except in import statements.
@@ -517,7 +513,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/prefer-for-of
      * Strict
      */
-    '@typescript-eslint/prefer-for-of': ERROR,
+    '@typescript-eslint/prefer-for-of': OFF,
 
     /*
      * Enforce using function types instead of interfaces with call signatures.
@@ -531,7 +527,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/prefer-includes
      * Strict
      */
-    '@typescript-eslint/prefer-includes': ERROR,
+    '@typescript-eslint/prefer-includes': OFF,
 
     /*
      * Require all enum members to be literal values.
@@ -561,7 +557,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/prefer-optional-chain
      * Strict
      */
-    '@typescript-eslint/prefer-optional-chain': ERROR,
+    '@typescript-eslint/prefer-optional-chain': OFF,
 
     /*
      * Require private members to be marked as `readonly` if they're never
@@ -588,7 +584,6 @@ module.exports = Object.freeze({
     /*
      * Enforce `RegExp#exec` over `String#match` if no global flag is provided.
      * https://typescript-eslint.io/rules/prefer-regexp-exec
-     *
      */
     '@typescript-eslint/prefer-regexp-exec': OFF,
 
@@ -605,7 +600,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/prefer-string-starts-ends-with
      * Strict
      */
-    '@typescript-eslint/prefer-string-starts-ends-with': ERROR,
+    '@typescript-eslint/prefer-string-starts-ends-with': OFF,
 
     /*
      * Enforce using `@ts-expect-error` over `@ts-ignore`.
@@ -618,13 +613,13 @@ module.exports = Object.freeze({
      * Require any function or method that returns a Promise to be marked async.
      * https://typescript-eslint.io/rules/promise-function-async
      */
-    '@typescript-eslint/promise-function-async': ERROR,
+    '@typescript-eslint/promise-function-async': OFF,
 
     /*
      * Require `Array#sort` calls to always provide a `compareFunction`.
      * https://typescript-eslint.io/rules/require-array-sort-compare
      */
-    '@typescript-eslint/require-array-sort-compare': ERROR,
+    '@typescript-eslint/require-array-sort-compare': OFF,
 
     /*
      * Require both operands of addition to be the same type and be `bigint`,
@@ -642,7 +637,7 @@ module.exports = Object.freeze({
      * Requires type checking
      */
     '@typescript-eslint/restrict-template-expressions': [
-      ERROR,
+      WARN,
       {
         allowNumber: true,
         allowAny: true
@@ -746,6 +741,7 @@ module.exports = Object.freeze({
      * Disallow the use of `eval()`-like methods.
      * https://typescript-eslint.io/rules/no-implied-eval
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-implied-eval': ERROR,
 
@@ -800,7 +796,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/no-throw-literal
      * Strict
      */
-    '@typescript-eslint/no-throw-literal': ERROR,
+    '@typescript-eslint/no-throw-literal': OFF,
 
     /*
      * Disallow unused expressions.
@@ -856,7 +852,7 @@ module.exports = Object.freeze({
      * Prefer class properties to assignment of literals in constructors.
      * https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/docs/rules/prefer-class-properties.md
      */
-    '@shopify/prefer-class-properties': ERROR
+    '@shopify/prefer-class-properties': WARN
 
     // #endregion @shopify
 
