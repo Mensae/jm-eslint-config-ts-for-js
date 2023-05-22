@@ -255,7 +255,7 @@ exports[`ts-for-js config plus formatting 1`] = `
       "off",
     ],
     "@typescript-eslint/naming-convention": [
-      "error",
+      "off",
       {
         "format": [
           "strictCamelCase",

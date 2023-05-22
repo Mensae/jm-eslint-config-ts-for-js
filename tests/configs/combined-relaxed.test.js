@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const { ESLint } = require('eslint');
 
 test('ts-for-js config plus formatting', async () => {

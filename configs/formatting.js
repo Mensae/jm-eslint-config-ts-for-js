@@ -5,7 +5,6 @@
  */
 
 /* eslint-env node */
-/* eslint-disable @typescript-eslint/naming-convention */
 
 const OFF = 'off';
 const ERROR = 'error';
@@ -21,7 +20,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/naming-convention
          */
         '@typescript-eslint/naming-convention': [
-          ERROR,
+          OFF,
           {
             selector: 'default',
             format: ['strictCamelCase']
@@ -87,7 +86,7 @@ module.exports = Object.freeze({
      * https://typescript-eslint.io/rules/naming-convention
      */
     '@typescript-eslint/naming-convention': [
-      ERROR,
+      OFF,
       {
         selector: 'default',
         format: ['strictCamelCase']
