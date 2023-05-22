@@ -245,7 +245,7 @@
      * Recommended: false
      * Default: All visible '@types' packages.
      */
-    "types": ["node"],
+    "types": ["eslint", "jest", "node"],
 
     /* Emit */
 
@@ -297,7 +297,7 @@
      * Recommended: false
      * Default: false
      */
-    // "importHelpers": true,
+    "importHelpers": true,
 
     /*
      * Specify emit/checking behavior for imports that are only used for types.
