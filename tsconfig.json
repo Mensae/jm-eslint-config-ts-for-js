@@ -194,7 +194,7 @@
      * Default: Classic if module is AMD, UMD, System or ES6/ES2015, Matches if
      * module is node12 or nodenext, Node otherwise.
      */
-    // "moduleResolution": "node",
+    "moduleResolution": "node",
 
     /*
      * Disallow import's, require's or <reference>'s from expanding the
