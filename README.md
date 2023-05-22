@@ -1,7 +1,6 @@
 # @jm/eslint-config-ts-for-js
 
-An [ESLint](http://eslint.org/) config that enforces best practices and prevents possible problems for the
-[Node.js](https://nodejs.org/) environment.
+An [ESLint](http://eslint.org/) config that enforces best practices and prevents possible problems for JavaScript.
 
 It is meant as an extention to [@jm/eslint-config-base](https://github.com/Mensae/jm-eslint-config-base), but can
 be used without.
@@ -14,7 +13,7 @@ rules that are conflicting with [prettier](https://prettier.io).
 
 - `ts-for-js`, The, default, base configuration that does not include any rules with regard to styling
 - `formatting`, Extention to the `ts-for-js` config that does include styling rules but only those that are not covered by [prettier](https://prettier.io).
-- `ts-for-js-relaxed`, Base configuration with some relaxed rules. Better suitable for personal or small projects.
+- `relaxed`, Base configuration with some relaxed rules. Better suitable for personal or small projects.
 - `formatting-relaxed`, Extention to the `ts-for-js-relaxed` configuration.
 
 ## Installation
@@ -60,9 +59,9 @@ Recommended, relaxed:
 ```json
 {
   "extends": [
-    "@jm/base-relaxed",
+    "@jm/relaxed",
     "@jm/eslint-config-base/formatting-relaxed",
-    "@jm/ts-for-js-relaxed",
+    "@jm/eslint-config-ts-for-js/relaxed",
     "@jm/eslint-config-ts-for-js/formatting-relaxed"
   ]
 }
