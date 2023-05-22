@@ -76,6 +76,7 @@ module.exports = Object.freeze({
      * Disallow awaiting a value that is not a Thenable.
      * https://typescript-eslint.io/rules/await-thenable
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/await-thenable': ERROR,
 
@@ -241,6 +242,7 @@ module.exports = Object.freeze({
      * Require Promise-like statements to be handled appropriately.
      * https://typescript-eslint.io/rules/no-floating-promises
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-floating-promises': ERROR,
 
@@ -248,6 +250,7 @@ module.exports = Object.freeze({
      * Disallow iterating over an array with a for-in loop.
      * https://typescript-eslint.io/rules/no-for-in-array
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-for-in-array': ERROR,
 
@@ -297,6 +300,7 @@ module.exports = Object.freeze({
      * Disallow Promises in places not designed to handle them.
      * https://typescript-eslint.io/rules/no-misused-promises
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-misused-promises': ERROR,
 
@@ -399,6 +403,7 @@ module.exports = Object.freeze({
      * Disallow type assertions that do not change the type of an expression.
      * https://typescript-eslint.io/rules/no-unnecessary-type-assertion
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unnecessary-type-assertion': OFF,
 
@@ -413,6 +418,7 @@ module.exports = Object.freeze({
      * Disallow calling a function with a value with type `any`.
      * https://typescript-eslint.io/rules/no-unsafe-argument
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unsafe-argument': OFF,
 
@@ -420,6 +426,7 @@ module.exports = Object.freeze({
      * Disallow assigning a value with type `any` to variables and properties.
      * https://typescript-eslint.io/rules/no-unsafe-assignment
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unsafe-assignment': OFF,
 
@@ -427,6 +434,7 @@ module.exports = Object.freeze({
      * Disallow calling a value with type `any`.
      * https://typescript-eslint.io/rules/no-unsafe-call
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unsafe-call': OFF,
 
@@ -448,6 +456,7 @@ module.exports = Object.freeze({
      * Disallow member access on a value with type `any`.
      * https://typescript-eslint.io/rules/no-unsafe-member-access
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unsafe-member-access': OFF,
 
@@ -455,6 +464,7 @@ module.exports = Object.freeze({
      * Disallow returning a value with type `any` from a function.
      * https://typescript-eslint.io/rules/no-unsafe-return
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-unsafe-return': OFF,
 
@@ -616,6 +626,7 @@ module.exports = Object.freeze({
      * `number`, or `string`.
      * https://typescript-eslint.io/rules/restrict-plus-operands
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/restrict-plus-operands': OFF,
 
@@ -623,6 +634,7 @@ module.exports = Object.freeze({
      * Enforce template literal expressions to be of `string` type.
      * https://typescript-eslint.io/rules/restrict-template-expressions
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/restrict-template-expressions': [
       WARN,
@@ -729,6 +741,7 @@ module.exports = Object.freeze({
      * Disallow the use of `eval()`-like methods.
      * https://typescript-eslint.io/rules/no-implied-eval
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/no-implied-eval': ERROR,
 
@@ -815,6 +828,7 @@ module.exports = Object.freeze({
      * Disallow async functions which have no `await` expression.
      * https://typescript-eslint.io/rules/require-await
      * Recommended
+     * Requires type checking
      */
     '@typescript-eslint/require-await': ERROR,
 
