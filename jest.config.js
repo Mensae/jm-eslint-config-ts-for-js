@@ -4,7 +4,6 @@
  */
 
 /* eslint-env node */
-/* eslint-disable @typescript-eslint/naming-convention */
 
 module.exports = {
   // All imported modules in your tests should be mocked automatically

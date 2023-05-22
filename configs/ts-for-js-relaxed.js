@@ -5,7 +5,6 @@
  */
 
 /* eslint-env node */
-/* eslint-disable @typescript-eslint/naming-convention */
 
 const OFF = 'off';
 const WARN = 'warn';
