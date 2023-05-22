@@ -4,7 +4,7 @@
   "description": "An ESLint configuration for linting JavaScript with typescript-eslint",
   "exports": {
     ".": "./configs/ts-for-js.js",
-    "./ts-for-js-relaxed": "./configs/ts-for-js-relaxed.js",
+    "./relaxed": "./configs/ts-for-js-relaxed.js",
     "./formatting": "./configs/formatting.js",
     "./formatting-relaxed": "./configs/formatting-relaxed.js",
     "./package.json": "./package.json"
